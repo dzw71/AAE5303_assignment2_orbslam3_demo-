@@ -1,33 +1,64 @@
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
-.Python
+*.pyc
+*.pyo
+*.pyd
 *.so
-
-# Virtual environments
+*.egg-info/
+.venv/
 venv/
-ENV/
+env/
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS
+# Jupyter / misc
+.ipynb_checkpoints/
 .DS_Store
 Thumbs.db
 
-# Large files
-*.bag
-*.ply
+# IDE
+.vscode/
+.idea/
 
-# Temporary files
-*.tmp
-*.temp
+# Logs
+*.log
+
+# ORB-SLAM3 runtime outputs
+KeyFrameTrajectory.txt
+CameraTrajectory.txt
+FrameTrajectory.txt
+ExecTimeMean.txt
+
+# Evaluation outputs
+evaluation_results/
+output/
+figures/
+
+# Temporary run folders
+/tmp/
+tmp/
+orbslam3_run_*/
+orbslam3_best_of_n/
+
+# Dataset artifacts
+*.bag
+data/extracted_data/
+data/images/
+data/*.png
+
+# Generated documentation helpers
+docs/camera_config.yaml
+output/evaluation_report.json
 
 # Build artifacts
 build/
 lib/
+bin/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
 
+# Third-party build folders
+Thirdparty/**/build/
+
+# Cursor / editor local files
+.cursor/
